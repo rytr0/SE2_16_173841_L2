@@ -1,0 +1,36 @@
+<!DOCUMENT html>
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+
+<body onload="creaTabella()">
+   <H1>Gestione Magazzino</H1>
+    <div id="Center">
+    <table id="ordiniTbl" >
+      </table>
+    <br/>
+    <button id="ordiniBtn" onclick="ordina()">ORDINA ITEMS</button>
+       <button id=limiteBtn>CAPIENZA</button>
+        <input type="text" id="limitTxt" value="30" maxlength="4">
+    <br/>
+    <br/>
+    <form id="ordiniForm" hidden="true">
+        <span>Nome Item</span> <br/>
+        <input type="text" id="nomeTxt" name="nomeTxt" placeholder="Inserisci item">
+        <br/> <span>Quantita</span>
+        <br/>
+        <input type="text" id="quantitaTxt" name="quantitaTxt" placeholder="Inserisci quantita">
+        <br>
+        <br>
+
+    </form>
+    <button hidden="true" id="aggiornaBtn" onclick="aggiornaTabella()">AGGIORNA MAGAZZINO</button>    
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
